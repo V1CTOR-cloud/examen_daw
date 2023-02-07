@@ -45,7 +45,7 @@ class Enana
 
     public function pocima()
     {
-        $this->puntosVida + 10;
+        $this->puntosVida += 10;
 
         if ($this->situacion === 'limbo') {
             $this->situacion = 'limbo';
@@ -68,7 +68,7 @@ class Enana
 
     public function pocimaExtra()
     {
-        $this->puntosVida + 50;
+        $this->puntosVida += 50;
 
 
 
