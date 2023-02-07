@@ -22,7 +22,8 @@ class Enana
         }
 
         if($this->puntosVida < 0){
-            return $this->situacion = 'muerta';
+                $this->situacion = 'muerta';
+                return $this->situacion;
         }
 
         if($this->puntosVida > 10){
