@@ -52,6 +52,4 @@ class EnanaTest extends TestCase {
 
     }
 }
-
-
 ?>
