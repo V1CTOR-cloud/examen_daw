@@ -3,7 +3,7 @@ name: ENANA
 on: [push]
 
 jobs:
-  ci_coche_test:
+  ci_test_herida_leve_vive:
     runs-on: ubuntu-latest
 
     steps:
