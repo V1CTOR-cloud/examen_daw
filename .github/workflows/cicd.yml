@@ -15,5 +15,5 @@ jobs:
       with:
         configuration: test/phpunit.xml
         args: --coverage-text
-  cd:
+  #cd:
 
