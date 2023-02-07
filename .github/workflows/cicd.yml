@@ -3,7 +3,7 @@ name: ENANA
 on: [push]
 
 jobs:
-  ci_herida_leve_muere:
+  ci_herida_grave:
     runs-on: ubuntu-latest
 
     steps:
