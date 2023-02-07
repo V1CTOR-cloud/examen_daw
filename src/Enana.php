@@ -43,10 +43,15 @@ class Enana
 
         if($this->situacion === 'limbo'){
             return $this->situacion = 'limbo';
-        }else if($this->situacion === 'viva'){
+        }
+
+        if($this->situacion === 'viva'){
             return $this->situacion = 'viva';
-        }if($this->situacion === 'muerta'){
+        }
+
+        if($this->situacion === 'muerta'){
             return $this->situacion = 'viva';
+        }
         }
         #Recupera 10 puntos de vida y además cambia el valor de situacion si así fuera necesario.
         #Si la Enana está en el limbo, la pocima no le afecta, seguirá en el limbo con 0 puntos de vida.
