@@ -3,7 +3,7 @@ name: ENANA
 on: [push]
 
 jobs:
-  ci_pocima_revive:
+  ci:
     runs-on: ubuntu-latest
 
     steps:
