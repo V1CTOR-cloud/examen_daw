@@ -15,13 +15,13 @@ class Enana
     }
 
     public function heridaLeve(){
-
+        $this->puntosVida - 10;
+        
         if($this->puntosVida < 0) {
            return $this->situacion = 'muerta';
         }else if ($this->puntosVida === 0) {
             return $this->situacion = 'limbo';
-        } else if($this->puntosVida > 10) {
-            $this->puntosVida - 10;
+        } else if($this->puntosVida > 0) {
             return $this->situacion = 'viva';
         }
         
