@@ -70,15 +70,16 @@ class Enana
     {
         $this->puntosVida += 50;
 
-
-
-
         if ($this->situacion === 'limbo') {
-            $this->situacion = 'viva';
-        } else if ($this->situacion === 'viva') {
-            $this->situacion = 'viva';
-        } else if ($this->situacion === 'muerta') {
-            $this->situacion = 'viva';
+            return $this->situacion = 'viva';
+        }
+
+        if ($this->situacion === 'viva') {
+            return $this->situacion = 'viva';
+        }
+
+        if ($this->situacion === 'muerta') {
+            return $this->situacion = 'viva';
         }
 
         #Única manera de devolver a la vida del limbo. Además se otorgarán 50 puntos de vida.
