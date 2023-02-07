@@ -17,11 +17,15 @@ class Enana
     public function heridaLeve(){
         $this->puntosVida - 10;
         
-        if($this->puntosVida < 0) {
-           return $this->situacion = 'muerta';
-        }else if ($this->puntosVida === 0) {
+        if($this->puntosVida === 0){
             return $this->situacion = 'limbo';
-        } else if($this->puntosVida > 0) {
+        }
+
+        if($this->puntosVida < 0){
+            return $this->situacion = 'muerta';
+        }
+
+        if($this->puntosVida > 10){
             return $this->situacion = 'viva';
         }
         
@@ -50,6 +54,16 @@ class Enana
     }
 
     public function pocimaExtra(){
+        $this->puntosVida + 50;
+
+        if($this->situacion === 'limbo'){
+            $this->situacion = 'viva';
+        }else if($this->situacion === 'viva'){
+            $this->situacion = 'viva';   
+        }else if($this->situacion === 'muerta'){
+            $this->situacion = 'viva';
+        }
+
         #Única manera de devolver a la vida del limbo. Además se otorgarán 50 puntos de vida.
     }
 }
